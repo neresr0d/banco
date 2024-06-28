@@ -1,5 +1,5 @@
 /* acessa o elemento root e cria variáveis globais(variáveis globais funcionam em todo o código) */
-:root { */
+:root { 
     --primaria: #915f32;
     --secundaria: #ce9056;
     --terciaria: #e1e6eb;
@@ -20,16 +20,19 @@ calcula automaticamente as larguras considerando: conteúdo, bordas, margens e p
 /* seleciona o header
 coloca a cor de fundo
 e un espaçamento interno */
-header {
+
+header, footer {
     background-color: var(--primaria);
     padding: 1rem;
 }
 /* seleciona o nav
+seleciona o header e o footer
 coloca a cor de fundo
 muda o display para grid
 cria uma grade de 5 colunas de largura igual
 alinha o texto no centro da coluna
 espaço entre as colunas e linhas do grid*/
+
 nav {
     background-color: var(--secundaria);
     display: grid;
@@ -37,6 +40,8 @@ nav {
     text-align: center;
     padding: 0.25rem;
     gap: 0.5rem;
+    align-items: center;
+    
     }
 
     /* seleciona todos os links dentro de navs
@@ -58,4 +63,51 @@ alinha os itens na vertical com base no seu centro */
     justify-content: space-between;
     align-items: center;
 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+main {
+    flex-grow: 1;
+    background-color: var(--terciaria);
+ 
+    
+}
+#index {
+    background-image: url("https://picsum.photos/1920/1080?random=1");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: var(--terciaria);
+    text-align: center;
+}
+
+#copy {
+    text-align: start;
+}
+
+.alinhar {
+    display: flex;
+    align-items: center;
+
+}
+
+.img-fim {
+    display: flex;
+    justify-content: end;
+
+}
+
+.img-fim img {
+    margin: 0 1rem;
 }
