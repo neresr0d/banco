@@ -19,7 +19,7 @@ calcula automaticamente as larguras considerando: conteúdo, bordas, margens e p
 }
 /* seleciona o header
 coloca a cor de fundo
-e un espaçamento interno */
+e um espaçamento interno */
 
 header, footer {
     background-color: var(--primaria);
