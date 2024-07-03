@@ -111,3 +111,7 @@ footer {
 .img-fim img {
     margin: 0 1rem;
 }
+
+.titulo {
+    position: center;
+}
