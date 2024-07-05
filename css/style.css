@@ -99,6 +99,7 @@ footer {
 .alinhar {
     display: flex;
     align-items: center;
+    
 
 }
 
@@ -111,3 +112,47 @@ footer {
 .img-fim img {
     margin: 0 1rem;
 }
+
+.titulo h1 {
+ 
+    position: center;
+    text-align: center;
+    background-color: #915f32;
+    
+ 
+    
+    height: 3rem;
+
+ 
+    
+}
+
+.texto {
+    text-align: center;
+    margin-top: 2.5rem;
+    margin: auto;
+    position: center;
+}
+
+.desenvolvido {
+    text-align: center;
+    font-size: medium;
+    position: center;
+    margin-top: 13rem;
+    
+}
+
+.contatos_a {
+    text-align: center;
+    position: center;
+    align-items: center;
+    
+    color: white;
+    display: flex;
+
+
+}
+ .img.contatos_a {
+    position: center;
+    align-items: center;
+ }
