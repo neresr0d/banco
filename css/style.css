@@ -113,16 +113,16 @@ footer {
     margin: 0 1rem;
 }
 
-.titulo h1 {
- 
-    position: center;
+.titulo {
+    
+    display: grid;
     text-align: center;
     background-color: #915f32;
     
- 
-    
     height: 3rem;
-
+    width: 45%;
+    margin: o auto;
+    margin-top: 1.5rem; 
  
     
 }
@@ -132,6 +132,7 @@ footer {
     margin-top: 2.5rem;
     margin: auto;
     position: center;
+    
 }
 
 .desenvolvido {
@@ -139,6 +140,7 @@ footer {
     font-size: medium;
     position: center;
     margin-top: 13rem;
+    color: black;
     
 }
 
@@ -146,13 +148,15 @@ footer {
     text-align: center;
     position: center;
     align-items: center;
-    
     color: white;
-    display: flex;
+    display: contents;
+   
 
 
 }
  .img.contatos_a {
     position: center;
     align-items: center;
+    display: flex;
  }
+
