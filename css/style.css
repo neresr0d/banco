@@ -113,16 +113,17 @@ footer {
     margin: 0 1rem;
 }
 
-.titulo {
+.titulo h1 {
     
-    display: grid;
+    display: block;
     text-align: center;
     background-color: #915f32;
-    
-    height: 3rem;
-    width: 45%;
-    margin: o auto;
+    padding: 0.5rem;
+    width: 550px;
+    margin-bottom: 0;
+    margin: 150px;
     margin-top: 1.5rem; 
+    justify-content: center;
  
     
 }
@@ -150,13 +151,48 @@ footer {
     align-items: center;
     color: white;
     display: contents;
+    display: grid;
+    font-size: 70px;
+    margin-top: 14rem;
+    
+    
    
-
-
 }
+
+.indexctt {
+    background-color:#e1e6eb;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
  .img.contatos_a {
     position: center;
     align-items: center;
     display: flex;
+    background-color:#915f32;
+    
+    
  }
 
+#cortext {
+    color: black;
+    text-decoration: none;
+    
+    
+}
+.log {
+    background-color: #915f32;
+    display:flex;
+    align-items: center;
+    
+    
+    padding: 0.5rem;
+    width: 550px;
+    margin-bottom: 0;
+    margin: 150px;
+    margin-top: 1.5rem; 
+    box-sizing: border-box;
+    
+
+}
