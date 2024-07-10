@@ -157,6 +157,8 @@ footer {
     margin-top: 14rem;
     
     
+    
+    
    
 }
 
@@ -172,6 +174,7 @@ footer {
     align-items: center;
     display: flex;
     background-color:#915f32;
+    justify-content: space-between;
     
     
  }
@@ -181,11 +184,15 @@ footer {
     text-decoration: none;
     
     
+    
 }
 .log {
     background-color: #915f32;
     display:flex;
     align-items: center;
+    border-color:black;
+    
+    
     
     
     padding: 0.5rem;
@@ -197,3 +204,9 @@ footer {
     
 
 }
+
+.imgdes {
+    align-items: center;
+    
+}
+
