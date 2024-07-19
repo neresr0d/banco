@@ -171,6 +171,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
+    
 }
 
  .img.contatos_a {
@@ -334,5 +335,9 @@ footer{
         color: var(--preto);
         cursor: pointer;
 
+    }
+
+    .h3 {
+        margin-top: 10rem;
     }
       
