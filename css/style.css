@@ -129,9 +129,11 @@ footer {
     margin-top: 1.5rem; 
     justify-content: center;
     margin-left: 40rem;
+}
+
  
     
-}
+
 
 .texto {
     text-align: center;
@@ -247,7 +249,9 @@ h1{ text-align: center;
     display: block;
     margin-bottom: 8px;
 }
-input[type="email"], input[type="password"] , input[type="text"], input[type="file"]{
+
+
+   input[type="email"], input[type="password"] , input[type="text"], input[type="file"]{
    position: relative;
    left: 1rem;
     width:18rem;
@@ -340,4 +344,35 @@ footer{
     .h3 {
         margin-top: 10rem;
     }
-      
+
+    .borda_das_categorias{
+        position: relative;
+        width: 20rem;
+        height: 27rem;
+        border-radius: 1rem ;
+        top: 3rem;
+    background-color: var(--secuntaria);
+     }
+    
+     .titulo{
+        background-color: var(--primaria);
+    }
+
+    a{
+        text-decoration: none;
+    color: var(--preto);
+    }
+    .categoria1{
+    background-color: var(--quartenaria);
+    text-align: center;
+        border-radius: 0.5rem;
+        background-color: var(--branco);
+        width: 15rem;
+        font-size: 2.2rem;
+        position: relative;
+     left: 3rem;
+     top: 4rem;
+    
+    }
+
+    
