@@ -306,11 +306,11 @@ footer{
 
 .icon_facebook,.ICONE_insta,.TELEFONE {
     background-color:  var(--primaria);
-    height: 15vh;
-    width: 15vh;
+    height: 10vh;
+    width: 10vh;
     position: relative;
-    left: 63vh;
-    top: 5REM;
+    left: 65vh;
+    top: 6REM;
     display: flex;
     justify-content: center;
     align-items: center;
