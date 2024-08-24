@@ -16,7 +16,7 @@ class Auth {
             $resultado = $stmt->fetch();
 
             if(!empty($resultado) && password_verify($senha, $resultado['senha'])) {
-                $_SESSION['id_doador'] = $resultado['id_usuario'];
+                $_SESSION['id_usuario'] = $resultado['id_usuario'];
 
                 header('Location: index.php');
                 exit();
