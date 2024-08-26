@@ -22,13 +22,13 @@
 
     <nav>
         <a href="">Inicio</a>
-        <a href="views/quem_somos.html">Quem Somos</a>
-        <a href="views/contatos.html">Contatos</a>
-        <a href="views/favoritos.html" class="alinhar">
+        <a href="/estante_web/banco/views/quem_somos.php">Quem Somos</a>
+        <a href="/estante_web/banco/views//contatos.php">Contatos</a>
+        <a href="/estante_web/banco/views//favoritos.php" class="alinhar">
             <img src="imgs/star.png.png" alt="" width="30px" height="30px">
         Favoritos
     </a>
-        <a href="views/login.html" class="alinhar"><img src="/imgs/user-solid.svg" alt="" height="30px" width="30px">Olá, usuário</a>
+        <a href="/estante_web/banco/views//login.php" class="alinhar"><img src="/imgs/user-solid.svg" alt="" height="30px" width="30px">Olá, usuário</a>
 
     </nav>
     
