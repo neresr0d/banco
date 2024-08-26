@@ -1,5 +1,5 @@
 /* acessa o elemento root e cria variáveis globais(variáveis globais funcionam em todo o código) */
-:root { 
+:root {
     --primaria: #915f32;
     --secundaria: #ce9056;
     --terciaria: #e1e6eb;
@@ -17,14 +17,17 @@ calcula automaticamente as larguras considerando: conteúdo, bordas, margens e p
     padding: 0;
     box-sizing: border-box;
 }
+
 /* seleciona o header
 coloca a cor de fundo
 e un espaçamento interno */
 
-header, footer {
+header,
+footer {
     background-color: var(--primaria);
     padding: 1rem;
 }
+
 /* seleciona o nav
 seleciona o header e o footer
 coloca a cor de fundo
@@ -41,10 +44,10 @@ nav {
     padding: 0.25rem;
     gap: 0.5rem;
     align-items: center;
-    
-    }
 
-    /* seleciona todos os links dentro de navs
+}
+
+/* seleciona todos os links dentro de navs
 remove a decoração dos links
 muda a cor da letra
 e a exibição do ponteiro do mouse para uma mão */
@@ -54,6 +57,7 @@ nav a {
     color: var(--preto);
     cursor: pointer;
 }
+
 /* qualquer item com essa classe
 muda o display para flex
 coloca o espaço vazio da horizontal no meio dos elementos
@@ -69,6 +73,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    
 
 }
 
@@ -79,9 +87,10 @@ main {
     background-position: center center;
     background-size: 100% 100%;
     left: 4rem;
- 
-    
+
+
 }
+
 #index {
     background-image: url("../imgs/WhatsApp\ Image\ 2024-06-27\ at\ 19.48.04.jpeg");
     background-repeat: no-repeat;
@@ -103,7 +112,7 @@ footer {
 .alinhar {
     display: flex;
     align-items: center;
-    
+
 
 }
 
@@ -117,39 +126,45 @@ footer {
     margin: 0 1rem;
 }
 
-.titulo h1 {
+.quem-somos{
     
-    display: grid;
-    text-align: center;
+}
+
+.quem-somos h1{
     background-color: #915f32;
-    padding: 0.5rem;
-    width: 550px;
-    margin-bottom: 0;
-    margin: 150px;
-    margin-top: 1.5rem; 
-    justify-content: center;
-    margin-left: 40rem;
-}
-
- 
-    
-
-
-.texto {
-    text-align: center;
-    margin-top: 2.5rem;
-    margin: auto;
-    position: center;
+    padding: 5px;
+    margin-top: 30px;
     
 }
 
-.desenvolvido {
+.quem-somos h2{
+    margin-top: 50px;
+}
+
+.quem-somos h4{
+    margin-top: 150px;
     text-align: center;
-    font-size: medium;
-    position: center;
-    margin-top: 13rem;
-    color: black;
+}
+
+.user{
+    display: flex;
+    align-items: center;   
+}
+
+.desenvolvido{
+    align-items: center;
     
+}
+
+.acesso{
+    background-color: #ce9056;
+    text-align: center;
+    
+    
+}
+
+.cria-conta{
+    text-align: center;
 }
 
 .contatos_a {
@@ -161,47 +176,48 @@ footer {
     display: grid;
     font-size: 70px;
     margin-top: 14rem;
-    
-    
-    
-    
-   
+
+
+
+
+
 }
 
 .indexctt {
-    background-color:#e1e6eb;
+    background-color: #e1e6eb;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
-    
+
 }
 
- .img.contatos_a {
+.img.contatos_a {
     position: center;
     align-items: center;
     display: flex;
-    background-color:#915f32;
+    background-color: #915f32;
     justify-content: space-between;
-    
-    
- }
+
+
+}
 
 #cortext {
     color: black;
     text-decoration: none;
-    
-    
-    
+
+
+
 }
 
 
 .imgdes {
     align-items: center;
-    
+
 }
 
 
-h1{ text-align: center;
+h1 {
+    text-align: center;
     position: relative;
     top: 1REM;
 }
@@ -224,7 +240,7 @@ h1{ text-align: center;
 
 }
 
-.cadastrado{
+.cadastrado {
     text-align: right 1rem;
     position: relative;
     top: 9rem;
@@ -238,44 +254,52 @@ h1{ text-align: center;
 
 
 
-#perfil,#senha,#name,#email{
+#perfil,
+#senha,
+#name,
+#email {
     text-align: left;
     position: relative;
     left: 1rem;
-   
-    }
 
-   label {
+}
+
+label {
     display: block;
     margin-bottom: 8px;
 }
 
 
-   input[type="email"], input[type="password"] , input[type="text"], input[type="file"]{
-   position: relative;
-   left: 1rem;
-    width:18rem;
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="file"] {
+    position: relative;
+    left: 1rem;
+    width: 18rem;
     padding: 8px 10px;
     font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 4px;}
-    button{
-        font-size: 1.5rem;
-        position: relative;
-        align-content: center;
-        top: 1.5rem;
-        width: 10rem;
+    border-radius: 4px;
+}
+
+button {
+    font-size: 1.5rem;
+    position: relative;
+    align-content: center;
+    top: 1.5rem;
+    width: 10rem;
     background-color: var(--primaria);
 
-    }
+}
 
-.Esqueceu_senha{
+.Esqueceu_senha {
     text-align: center;
     position: relative;
-    top:5rem;
+    top: 5rem;
 
 }
-    
+
 .alinha_icon {
     text-align: center;
     align-items: center;
@@ -295,21 +319,24 @@ h1{ text-align: center;
     text-align: start;
 }
 
-footer{
+footer {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    text-align:center;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
 
 }
-.rede_social{
+
+.rede_social {
     position: relative;
     left: 1rem;
 
 }
 
 
-.icon_facebook,.ICONE_insta,.TELEFONE {
-    background-color:  var(--primaria);
+.icon_facebook,
+.ICONE_insta,
+.TELEFONE {
+    background-color: var(--primaria);
     height: 10vh;
     width: 10vh;
     position: relative;
@@ -320,109 +347,118 @@ footer{
     align-items: center;
     border-radius: 4rem;
 }
-.icon_facebook a,.ICONE_insta a,.TELEFONE a{
+
+.icon_facebook a,
+.ICONE_insta a,
+.TELEFONE a {
     text-decoration: none;
     color: var(--preto);
     cursor: pointer;
     color: black;
 }
-    H2{
-        text-align: center;
-        font-size: 3REM;
-        text-decoration:solid;
-        color: black;
-    }
-  
 
-    .icon_facebook {
-        text-decoration: none;
-        color: var(--preto);
-        cursor: pointer;
+H2 {
+    text-align: center;
+    font-size: 3REM;
+    text-decoration: solid;
+    color: black;
+}
 
-    }
 
-    .h3 {
-        margin-top: 10rem;
-    }
-
-    .borda_das_categorias{
-        position: relative;
-        width: 20rem;
-        height: 27rem;
-        border-radius: 1rem ;
-        top: 3rem;
-    background-color: var(--secuntaria);
-     }
-    
-    
-
-    a{
-        text-decoration: none;
+.icon_facebook {
+    text-decoration: none;
     color: var(--preto);
-    }
-    .categoria1{
+    cursor: pointer;
+
+}
+
+.h3 {
+    margin-top: 10rem;
+}
+
+.borda_das_categorias {
+    position: relative;
+    width: 20rem;
+    height: 27rem;
+    border-radius: 1rem;
+    top: 3rem;
+    background-color: var(--secuntaria);
+}
+
+
+
+a {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.categoria1 {
     background-color: var(--quartenaria);
     text-align: center;
-        border-radius: 0.5rem;
-        background-color: var(--branco);
+    border-radius: 0.5rem;
+    background-color: var(--branco);
+    width: 15rem;
+    font-size: 2.2rem;
+    position: relative;
+    left: 3rem;
+    top: 4rem;
+
+}
+
+@media screen and (max-width:900px) {
+
+    nav {
+        background-color: var(--secuntaria);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        text-align: center;
+        padding: 0.25rem;
+        gap: 0.5rem;
+        font-family: "Special Elite", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1rem;
+    }
+
+    .borda_login {
+        border: solid rgb(7, 7, 7) 0.1rem;
+        border-radius: 2rem;
+        position: relative;
+        top: 17rem;
+        background-color: var(--primaria);
+        border-radius: 3rem;
+        width: 18rem;
+        height: 30rem;
+        text-align: center;
+        font-size: 1rem;
+        background-color: var(--secuntaria);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input[type="file"],
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        position: relative;
+        left: 0.4rem;
         width: 15rem;
-        font-size: 2.2rem;
-        position: relative;
-     left: 3rem;
-     top: 4rem;
-    
-    }
-    @media screen and (max-width:900px){
-    
-        nav {
-            background-color: var(--secuntaria);
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            text-align: center;
-            padding: 0.25rem;
-            gap: 0.5rem;
-            font-family: "Special Elite", system-ui;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 1rem;
-        }  
-        .borda_login {
-            border: solid rgb(7, 7, 7) 0.1rem;
-            border-radius: 2rem;
-            position: relative;
-            top: 17rem;
-            background-color: var(--primaria);
-            border-radius: 3rem;
-            width: 18rem;
-            height: 30rem;
-            text-align: center;
-            font-size: 1rem;
-            background-color: var(--secuntaria);
-            font-family: Arial, Helvetica, sans-serif;
-        }  
-       input[type="file"] ,input[type="text"], input[type="email"] , input[type="password"]
-        {
-            position: relative;
-          left: 0.4rem;
-            width:15rem;
-            padding: 10px 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-            button{
-            font-size: 1rem;
-            position: relative;
-                align-content: center;
-            top:0.8rem;
-            width: 10rem;
-            background-color: var(--primaria);
-        }
+        padding: 10px 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
     }
 
-    .rede_social {
+    button {
+        font-size: 1rem;
         position: relative;
-        left: 1rem;
+        align-content: center;
+        top: 0.8rem;
+        width: 10rem;
+        background-color: var(--primaria);
     }
+}
 
-    
+.rede_social {
+    position: relative;
+    left: 1rem;
+}

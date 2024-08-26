@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estante Web</title>
 
-    <link rel="stylesheet" href="..//css/style.css">
-  
+    <link rel="stylesheet" href="/estante_web/banco/css/style.css">
+
 </head>
+
 <body>
     <header>
         <div class="logo-busca">
-            
+
             <h1>Estante Web</h1>
 
             <form action="">
                 <input type="search" name="busca" id="busca">
             </form>
         </div>
-       
+
     </header>
 
     <nav>
@@ -27,53 +29,37 @@
         <a href="contatos.html">Contatos</a>
         <a href="" class="alinhar">
             <img src="../imgs/star.png.png" alt="" width="30px" height="30px">
-        Favoritos
-    </a>
+            Favoritos
+        </a>
         <a href="login.html">Login</a>
 
     </nav>
-    
-        <main>
-           <div class="titulo"><h1>Quem somos</h1>
-        
-        </div>
-               <div class="texto">
+
+    <main>
+        <div class="quem-somos">
+            <div>
+                <h1>Quem somos</h1>
+
+            </div>
+            <div>
                 <h2>Olá caros amigos, é um prazer enorme ter vocês conosco. Nesse <br>
-                    momento queremos apresentar 
-                   esse projeto que está sendo <br>
+                    momento queremos apresentar
+                    esse projeto que está sendo <br>
                     desenvolvido pelos alunos da turma 52 do Curso de Programador <br>
-                      Web Noturno no
+                    Web Noturno no
                     Senac do ano de 2024 com a supervisão do Professor <br>
-                     Luis Fellipe.</h2>
-                </div>
-                    
-                    <div class="desenvolvido" id="imgdes"><h4>
-                        Desenvolvido por</h4><img src="..//imgs/icon_des.png" alt="" height="30px" width="30px" id="user">
-                       
+                    Luis Fellipe.</h2>
+            </div>
 
-                      
-
-                    </div>
-       
+            <div class="desenvolvido">
+                <h4 class="user">
+                    Desenvolvido por <img src="/estante_web/banco/imgs/icon_des.png" alt="" height="30px" width="30px" class="user">
+                    </h4>
+            </div>
+        </div>
 
     </main>
 
-
-    <footer>
-        <div id="copy">
-            &copy; Estante Web
-        </div>
-
-        <div>
-            Todos os direitos reservados
-        </div>
-
-        <div class="img-fim">
-            <img src="../imgs/facebook.svg" alt="" width="30px" height="30px">
-            <img src="..//imgs/instagram.svg" alt="" width="30px" height="30px">
-        </div>
-
-    </footer>
-    
 </body>
+
 </html>
