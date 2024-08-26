@@ -1,0 +1,65 @@
+<div class="ICONE_insta">
+    <a href="https://www.instagram.com/accounts/login/" target="_blank">
+        <img src="../img/instagram.svg" alt="" width="75PX" height="75PX">  
+    </div>
+        </a>
+
+        <a href="https://www.instagram.com/accounts/login/"target="_blank">
+        <h2>@estante_web</h2>
+        </a>
+<div class="icon_facebook">
+        <a href="https://www.facebook.com/?locale=pt_BR"target="_blank">
+             <img src="../img/facebook.svg" alt="" width="75px" height="75PX">
+        </div>
+    </A>
+        <a href="https://www.facebook.com/?locale=pt_BR" target="_blank">
+        <h2>@estante_web</h2>
+         </a>
+
+        </div>
+
+<DIV class="TELEFONE">
+            <a href=""><img src="../img/call_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="" width="75px" height="75px">
+            </a>
+                </div>
+
+       <a> <h2>(98)3200-0032</h2>
+        </a>
+
+.icon_facebook,.ICONE_insta,.TELEFONE {
+    background-color:  var(--primaria);
+    height: 15vh;
+    width: 15vh;
+    position: relative;
+    left: 63vh;
+    top: 5REM;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4rem;
+}
+.icon_facebook a,.ICONE_insta a,.TELEFONE a{
+    text-decoration: none;
+    color: var(--preto);
+    cursor: pointer;
+}
+    H2{
+        text-align: center;
+        font-size: 3REM;
+        text-decoration: none;
+    }
+
+
+_______________________________________________________________________________________
+
+<div class="contatos_a">
+        <a href="https://www.instagram.com" id="cortext"> 
+            <img src="..//imgs/instagram.svg" alt="ig" width="30px" height="30px">@estante_web</a>
+        <a href="https://www.facebook.com" id="cortext"> 
+            <img src="..//imgs/facebook.svg" alt="" width="30px" height="30px">@estante_web</a>
+        <a href="" id="cortext">
+            <img src="..//imgs/telefone.svg" alt="" width="30px" height="30px">(98) 9200-0032</a>
+        
+    
+    </div>
+
