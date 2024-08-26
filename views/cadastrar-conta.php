@@ -35,38 +35,45 @@
     </nav>
 
     <main>
-        <div class="acesso">
+        <div class="borda_login">
             <div>
-                <p>Acesse sua conta</p>
+                <h1>Acesse sua conta</h1>
+                <br> <br>
             </div>
 
             <div>
-                <p>E-mail:</p>
-            </div>
 
-            <div>
-                <p>Senha:</p>
-            </div>
+                <form action="">
+                    <div class="email">
+                        <label for="email" class="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <br> <br>
+                    <div class="senha">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
 
-            <div>
-                <button>Entrar</button>
-            </div>
+                    <div>
+                        <button>ENTRA</button>
 
-            <br>
+                    </div>
 
-
-            <div>
-                <a href="">Esqueceu sua senha?</a>
-            </div>
-
+                    <div class="Esqueceu_senha">
+                        <a href="">Esqueceu sua senha?</a>
+                        <div class="cadastrado">
+                            <div>
 
 
+                            </div>
+                            <h4>Ainda não é cadastrado ?
+                                <a href="..//cadastro.html">Crie sua conta</a>
 
-        </div>
+                            </h4>
 
-        <div>
-            <p class="cria-conta">Ainda não é cadastrado?<br>Crie sua conta</p>
-        </div>
+
+
+
 
     </main>
 
