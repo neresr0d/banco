@@ -441,21 +441,30 @@ a {
     transform: translateY(-41%) translateX(-50%);
     width: 50rem;
     height: 32rem;
+    display: inline-block;
     
 }
 
 .edit1 {
     background-color: #915f32;
-    border-radius: 100px;
+    border-radius: 40px;
     position: relative;
     align-items: center;
-    justify-content: space-between;
+    margin-top: -18px;
+    
+    
 }
 
 .edit1 button{
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    align-self: center;
+    
+    
+}
+
+.edit h1 button{
+    display: inline-block;
+    
 }
 
 @media screen and (max-width:900px) {

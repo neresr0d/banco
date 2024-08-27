@@ -48,19 +48,19 @@
                 <div>
                     <p>Adicionar imagens</p>
                 </div>
-                <p>Digite Tútulo</p>
-                <p>Digite Autor</p>
-                <p>Digite Categoria</p>
+                <input type="text" placeholder="Digite Título">
+                <input type="text" placeholder="Digite Autor">
+                <input type="text" placeholder="Digite Categoria">
             </div>
 
             <div>
-                <P>Digite Sinopse</P>
+            <input type="text" placeholder="Digite Sinopse">
             </div>
             <div>
-                <p>Salvar</p>
+                <button>Salvar</button>
             </div>
             <div>
-                <p>Deletar</p>
+            <button>Deletar</button>
             </div>
         </div>
     </main>
