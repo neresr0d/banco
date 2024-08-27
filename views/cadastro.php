@@ -61,8 +61,12 @@
                                 <button>Criar Conta</button>
                             </div><br>
 
-                            <div><br><h4>Já é cadastrado?</h4><br>
-                             <a href="https://www.canva.com/design/DAGH3_Mzymw/QNPyFU1iTtvDz7E3N9cDog/edit"><h4>Acesse sua conta</h4></a></div>
+                            <div><br>
+                                <h4>Já é cadastrado?</h4><br>
+                                <a href="https://www.canva.com/design/DAGH3_Mzymw/QNPyFU1iTtvDz7E3N9cDog/edit">
+                                    <h4>Acesse sua conta</h4>
+                                </a>
+                            </div>
 
                         </div>
 
