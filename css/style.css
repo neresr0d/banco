@@ -134,11 +134,18 @@ footer {
     background-color: #915f32;
     padding: 5px;
     margin-top: 30px;
+    width: 500px;
     
 }
 
+.quem{
+    justify-content: center;
+    display: flex;
+}
+
 .quem-somos h2{
-    margin-top: 50px;
+    margin-top: 180px;
+    font-size: 35px;
 }
 
 .quem-somos h4{
@@ -152,7 +159,10 @@ footer {
 }
 
 .desenvolvido{
+    margin-top: 140px;
     align-items: center;
+    display: flex;
+    justify-content: center;
     
 }
 
@@ -237,6 +247,11 @@ h1 {
     font-size: 1rem;
     background-color: var(--secuntaria);
     font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.borda-login p{
+    background-color: #915f32;
 
 }
 

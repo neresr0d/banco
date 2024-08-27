@@ -37,7 +37,7 @@
 
     <main>
         <div class="quem-somos">
-            <div>
+            <div class="quem">
                 <h1>Quem somos</h1>
 
             </div>

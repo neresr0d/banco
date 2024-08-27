@@ -70,8 +70,8 @@
                     
 
                 </div>
-         <h4>Ainda não é cadastrado ?
-            <a href="..//cadastro.html">Crie sua conta</a>
+         <h4>Ainda não é cadastrado ?<br>
+            <a href="/estante_web/banco/cadastro.php">Crie sua conta</a>
 
          </h4>
 
