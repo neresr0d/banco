@@ -38,8 +38,9 @@
                 <form action="">
                     <div class="perfil">
                         <label for="" class="email">Foto do perfil</label>
-                        <input type="file" id="Foto" name="foto" accept="img">
-                        <img src="/imgs/facebook.svg" alt="" width="30px" height="30px">
+                        <img src="/estante_web/banco/imgs/upload.png" alt="Imagem" class="img-perfil">
+                        <input type="file" id="fileInput">
+
                     </div>
 
                     <div class="nome">
@@ -50,21 +51,23 @@
                         <br>
 
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" name="email" required>
                         <br>
                         <br>
                         <div class="senha">
                             <label for="senha">Senha:</label>
-                            <input type="password" id="senha" name="senha" required>
+                            <input type="password" name="senha" id="senha">
+                            <div>
+                                <button>Criar Conta</button>
+                            </div><br>
+
+                            <div><br><h4>Já é cadastrado?</h4><br>
+                             <a href="https://www.canva.com/design/DAGH3_Mzymw/QNPyFU1iTtvDz7E3N9cDog/edit"><h4>Acesse sua conta</h4></a></div>
 
                         </div>
 
-                        <div>
-                            <button>Criar Conta</button>
-
-
-                            <p class="h3">
-                                Ao seguir com o cadastro, concordo com os <br>Termos de uso e Politicas de privacidade </p>
+                        <p class="h3">
+                            Ao seguir com o cadastro, concordo com os <br>Termos de uso e Politicas de privacidade </p>
 
 
 
