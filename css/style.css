@@ -238,13 +238,12 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-    background-color: var(--primaria);
     border-radius: 5rem;
     width: 22rem;
     height: 30rem;
     text-align: center;
     font-size: 1rem;
-    background-color: var(--secuntaria);
+    background-color: #ce9056;
     font-family: Arial, Helvetica, sans-serif;
 
 }
@@ -265,21 +264,18 @@ h1 {
 .borda_cadastro {
     margin: 0 auto;
     padding: 20px;
-
-
     border: solid black 0.1rem;
     border-radius: 4rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-    background-color: var(--primaria);
+    background-color: var(--secundaria);
     border-radius: 5rem;
     width: 22rem;
     height: 30rem;
     text-align: center;
     font-size: 1rem;
-    background-color: var(--secuntaria);
     font-family: Arial, Helvetica, sans-serif;
 
 }
@@ -290,20 +286,20 @@ h1 {
     margin-bottom: 15px;
 }*/
 
-...cad label {
-    flex: 0 0 150px; /* Define uma largura fixa para o label */
-    text-align: top; /* Alinha o texto do label à direita */
-    margin-right: 1px; /* Espaço entre o label e o input */
+/*.cad label {
+    flex: 0 0 150px;  Define uma largura fixa para o label 
+    text-align: top;  Alinha o texto do label à direita 
+    margin-right: 1px;  Espaço entre o label e o input 
     font-weight: bold;
-}
+}*/
 
-...cad input {
-    flex: 1; /* Faz o input ocupar o restante do espaço disponível */
+/*.cad input {
+    flex: 1;  Faz o input ocupar o restante do espaço disponível 
     padding: 8px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
+}*/
 
 .perfil input[type="file"] {
     /* esconder o input */
@@ -470,7 +466,7 @@ a {
 
 }
 
-.edit {
+.editar {
     background-color: #ce9056;
     border: solid black 0.1rem;
     border-radius: 4rem;
@@ -480,29 +476,102 @@ a {
     transform: translateY(-41%) translateX(-50%);
     width: 50rem;
     height: 32rem;
-    display: inline-block;
-    
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    flex-direction: row;
+
 }
 
-.edit1 {
+.editar1 {
+
+    display: flex;
     background-color: #915f32;
-    border-radius: 40px;
+    border-radius: 50px;
     position: relative;
     align-items: center;
-    margin-top: -18px;
+    margin-top: 5px;
+    justify-content: space-between;
+    width: 800x;
+    height: 50px;
     
-    
+
+
 }
 
-.edit1 button{
-    border-radius: 50%;
+.editar1 button {
+    border-radius: 100%;
     align-self: center;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 50px;
     
+
+}
+
+.editar h1 button {
+    justify-content: space-between;
+    
+
+
+}
+
+.editar1 img {
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    margin-top: 0.5px;
+
+}
+
+.editar1 h1{
+    margin-bottom: 60px;
+}
+
+.editar-imgs{
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
     
 }
 
-.edit h1 button{
+
+
+ .iii{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    display: block;
+    padding: 5px;
+
+}
+
+.img-livro input[type="file"] {
+    /* esconder o input */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    /* Garante que o input esteja atrás da imagem */
+}
+
+.img-livro{
+    background-color: gray;
+    position: relative;
     display: inline-block;
+    text-align: center;
+
+}
+
+.editar .save-delete button{
+    justify-content: space-around;
     
 }
 
