@@ -74,7 +74,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow: hidden;
+    overflow:auto;
     padding: 0;
     margin: 0;
 
@@ -185,10 +185,6 @@ footer {
     display: grid;
     font-size: 70px;
     margin-top: 14rem;
-
-
-
-
 
 }
 
@@ -334,7 +330,8 @@ label {
 input[type="email"],
 input[type="password"],
 input[type="text"],
-input[type="file"] {
+input[type="file"],
+input[type="tel"] {
     position: relative;
     left: 0.2rem;
     width: 18rem;
@@ -570,8 +567,10 @@ a {
 
 }
 
-.editar .save-delete button{
+.save-delete button{
     justify-content: space-around;
+    display: inline-block;
+    
     
 }
 

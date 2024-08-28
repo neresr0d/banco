@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -35,7 +39,7 @@
             <h1>Crie sua conta</h1>
 
 
-            <form action="">
+            <form action="/estante_web/banco/controllers/cadastrar_usuario_controller.php" method="post">
                 
                     <div class="perfil">
                     <label for="file" class="file">Foto do perfil</label>
@@ -47,6 +51,12 @@
                 <div class="cad">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" required>
+
+                </div>
+                <br>
+                <div class="cad">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
 
                 </div>
                 <br>
@@ -62,7 +72,7 @@
                     <input type="password" id="senha" name="senha" required>
                 </div>
                 <div>
-                    <button type="submit">Criar Conta</button>
+                    <button type="submit" value="CADASTRAR">Criar Conta</button>
                 </div><br>
 
                 <div><br>

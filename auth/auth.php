@@ -1,4 +1,5 @@
 <?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/configs/conexao.php';
 
 session_start();
 class Auth {
@@ -17,8 +18,9 @@ class Auth {
 
             if(!empty($resultado) && password_verify($senha, $resultado['senha'])) {
                 $_SESSION['id_usuario'] = $resultado['id_usuario'];
+                $_SESSION['nome_usuario'] = $resultado['nome_usuario'];
 
-                header('Location: index.php');
+                header('Location: /estante_web/banco/index.php');
                 exit();
             }
             
@@ -30,7 +32,7 @@ class Auth {
     static function logout() {
         session_unset();
         session_destroy();
-        header('Location: index.php');
+        header('Location: /estante_web/banco/views/login.php');
         exit();
     }
 
