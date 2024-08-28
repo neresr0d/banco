@@ -23,6 +23,8 @@ CREATE TABLE usuario (
     CREATE TABLE categoria (
         id_categoria INT AUTO_INCREMENT PRIMARY KEY,
         nome_categoria VARCHAR(100) NOT NULL,
+        id_livro INT,
+        FOREIGN KEY (id_livro) REFERENCES livros(id_livro) 
  
     )
     

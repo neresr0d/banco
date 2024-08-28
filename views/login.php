@@ -71,7 +71,7 @@
 
                 </div>
          <h4>Ainda não é cadastrado ?<br>
-            <a href="/estante_web/banco/cadastro.php">Crie sua conta</a>
+            <a href="/estante_web/banco/views/cadastro.php">Crie sua conta</a>
 
          </h4>
 

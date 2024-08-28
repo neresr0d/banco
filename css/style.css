@@ -262,19 +262,58 @@ h1 {
 
 }
 
+.borda_cadastro {
+    margin: 0 auto;
+    padding: 20px;
 
+
+    border: solid black 0.1rem;
+    border-radius: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background-color: var(--primaria);
+    border-radius: 5rem;
+    width: 22rem;
+    height: 30rem;
+    text-align: center;
+    font-size: 1rem;
+    background-color: var(--secuntaria);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*.cad {
+    display: flex;
+    align-items: start;
+    margin-bottom: 15px;
+}*/
+
+...cad label {
+    flex: 0 0 150px; /* Define uma largura fixa para o label */
+    text-align: top; /* Alinha o texto do label à direita */
+    margin-right: 1px; /* Espaço entre o label e o input */
+    font-weight: bold;
+}
+
+...cad input {
+    flex: 1; /* Faz o input ocupar o restante do espaço disponível */
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
 .perfil input[type="file"] {
+    /* esconder o input */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     opacity: 0;
-    /* Torna o input invisível, mas ainda funcional */
     cursor: pointer;
-    /* Muda o cursor para indicar que é clicável */
-    z-index: 1;
     /* Garante que o input esteja atrás da imagem */
 }
 
@@ -291,9 +330,9 @@ h1 {
 label {
     display: block;
     margin-bottom: 10px;
-
-
 }
+
+
 
 
 input[type="email"],

@@ -30,49 +30,56 @@
     </nav>
 
     <main id="main">
-        <div class="borda_login">
-            <div>
-                <h1>Crie sua conta</h1>
+        <div class="borda_cadastro">
+
+            <h1>Crie sua conta</h1>
 
 
-                <form action="">
+            <form action="">
+                
                     <div class="perfil">
-                        <label for="" class="email">Foto do perfil</label>
-                        <img src="/estante_web/banco/imgs/upload.png" alt="Imagem" class="img-perfil">
-                        <input type="file" id="fileInput">
+                    <label for="file" class="file">Foto do perfil</label>
+                    <img src="/estante_web/banco/imgs/upload.png" alt="Imagem" class="img-perfil">
+                    <input type="file" id="fileInput" name="file">
 
-                    </div>
+                </div>
 
-                    <div class="nome">
-                        <label for="name">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
-                        <div class="nome">
-                        </div>
-                        <br>
+                <div class="cad">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
 
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" required>
-                        <br>
-                        <br>
-                        <div class="senha">
-                            <label for="senha">Senha:</label>
-                            <input type="password" name="senha" id="senha">
-                            <div>
-                                <button>Criar Conta</button>
-                            </div><br>
+                </div>
+                <br>
 
-                            <div><br>
-                                <h4>Já é cadastrado?</h4><br>
-                                <a href="https://www.canva.com/design/DAGH3_Mzymw/QNPyFU1iTtvDz7E3N9cDog/edit">
-                                    <h4>Acesse sua conta</h4>
-                                </a>
-                            </div>
+                <div class="cad">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <br>
 
-                        </div>
+                <div class="cad">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+                <div>
+                    <button type="submit">Criar Conta</button>
+                </div><br>
 
-                        <p class="h3">
-                            Ao seguir com o cadastro, concordo com os <br>Termos de uso e Politicas de privacidade </p>
+                <div><br>
+                    <h4>Já é cadastrado?</h4><br>
+                    <a href="https://www.canva.com/design/DAGH3_Mzymw/QNPyFU1iTtvDz7E3N9cDog/edit">
+                        <h4>Acesse sua conta</h4>
+                    </a>
+                </div>
+               
 
+
+
+                <p class="h3">
+                    Ao seguir com o cadastro, concordo com os <br>Termos de uso e Politicas de privacidade </p>
+
+            </form>
+        </div>
 
 
 
