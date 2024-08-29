@@ -8,7 +8,7 @@ $senha = $_POST ['senha'];
 $senha = password_hash($senha, PASSWORD_DEFAULT);
 
 $usuario = new Usuario ();
-$usuario-> nome_usuario = $nome;
+$usuario-> nome_usuario = $nome_usuario;
 $usuario-> telefone = $telefone;
 $usuario-> email = $email;
 $usuario-> senha = $senha;
