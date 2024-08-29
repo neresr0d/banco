@@ -26,11 +26,11 @@
 
     </header>
     <nav>
-        <a href="/index.html">Inicio</a>
-        <a href="/views/quem_somos.html"> Quem Somos</a>
-        <a href="/views/contatos.html">Contato</a>
-        <a href="/views/favoritos.html" class="alinhar"> <img src="/imgs/star.png.png" alt="" width="30px" height="30px">Favoritos</a>
-        <a href="/views/login.html">Login</a>
+        <a href="/estante_web/banco/index.php">Inicio</a>
+        <a href="/estante_web/banco/views/quem_somos.php"> Quem Somos</a>
+        <a href="/estante_web/banco/views/contatos.php">Contato</a>
+        <a href="/estante_web/banco/views/favoritos.php" class="alinhar"> <img src="/imgs/star.png.png" alt="" width="30px" height="30px">Favoritos</a>
+        <a href="/estante_web/banco/views/login.php">Login</a>
     </nav>
 
     <main id="main">
@@ -40,13 +40,13 @@
 
 
             <form action="/estante_web/banco/controllers/cadastrar_usuario_controller.php" method="POST">
-                
-                    <div class="perfil">
+
+                <!--<div class="perfil">
                     <label for="file" class="file">Foto do perfil</label>
-                    <img src="/estante_web/banco/imgs/upload.png" alt="Imagem" class="img-perfil" >
+                    <img src="/estante_web/banco/imgs/upload.png" alt="Imagem" class="img-perfil">
                     <input type="file" id="fileInput" name="file">
 
-                </div>
+                </div>-->
 
                 <div class="cad">
                     <label for="nome">Nome:</label>
@@ -77,11 +77,11 @@
 
                 <div><br>
                     <h4>Já é cadastrado?</h4><br>
-                    <a href="https://www.canva.com/design/DAGH3_Mzymw/QNPyFU1iTtvDz7E3N9cDog/edit">
+                    <a href="">
                         <h4>Acesse sua conta</h4>
                     </a>
                 </div>
-               
+
 
 
 
@@ -90,13 +90,6 @@
 
             </form>
         </div>
-
-
-
-
-
-
-
     </main>
 
 

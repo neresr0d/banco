@@ -1,7 +1,7 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/models/usuario.php';
 
-$nome_usuario = $_POST ['nome'];
+$nome = $_POST ['nome'];
 $telefone = $_POST ['telefone'];
 $email = $_POST ['email'];
 $senha = $_POST ['senha'];

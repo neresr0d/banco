@@ -1,5 +1,6 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/configs/conexao.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/models/usuario.php';
 
 
 class Usuario{

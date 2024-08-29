@@ -191,8 +191,9 @@ footer {
 .indexctt {
     background-color: #e1e6eb;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center ;
     background-size: 100% 100%;
+    
 
 }
 
@@ -440,7 +441,7 @@ H2 {
     height: 27rem;
     border-radius: 1rem;
     top: 3rem;
-    background-color: var(--secuntaria);
+    background-color: var(--secundaria);
 }
 
 
@@ -448,6 +449,12 @@ H2 {
 a {
     text-decoration: none;
     color: var(--preto);
+}
+
+.categoria_fav_2{
+    position: relative;
+    text-align: center;
+    display: inline;
 }
 
 .categoria1 {
