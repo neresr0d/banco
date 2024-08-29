@@ -1,6 +1,6 @@
-CREATE DATABASE Estante_Web;
+CREATE DATABASE estante;
 
-USE Estante_Web;
+USE estante;
 
 CREATE TABLE livros (
     id_livro INT PRIMARY KEY AUTO_INCREMENT,
@@ -10,15 +10,15 @@ CREATE TABLE livros (
     ano_lancamento INT NOT NULL
 
 
-)
+);
 
-CREATE TABLE usuario (
+CREATE TABLE usuario(
     id_usuario INT PRIMARY KEY AUTO_INCREMENT,
     nome_usuario VARCHAR(100) NOT NULL,
-    telefone VARCHAR(20)
+    telefone VARCHAR(20),
     email VARCHAR(100) NOT NULL UNIQUE,
     senha VARCHAR(100) NOT NULL
-    )
+    );
 
     INSERT INTO usuario (nome_usuario, telefone, email, senha) VALUES ('rodrigo', 30421881, 'rodrigommm@gmail.com', "")
 

@@ -1,7 +1,7 @@
 <?php
 
 define("DRIVE", "mysql");
-define("NOME_DO_BANCO", "estante_web");
+define("NOME_DO_BANCO", "estante");
 define("LOCAL_DO_BANCO", "localhost");
 define("CHARSET", "utf8");
 define("USUARIO", "root");
