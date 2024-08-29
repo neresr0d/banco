@@ -1,27 +1,29 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/configs/conexao.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/models/usuario.php';
 
-
-class Usuario{
+class Usuario
+{
     public $id_usuario;
     public $nome_usuario;
     public $telefone;
     public $email;
-    public $senha; 
-    
-    
+    public $senha;
+
+
     //public function __construction($id = false){
     //    if($id);{
-     //       $this->id_usuario = $id;
+    //       $this->id_usuario = $id;
     //      $this->carregarUsuario();
     //    }
     //}
 
-    public function cadastrarUsuario(){
-        try{$conn = Conexao::conectar();
+    public function cadastrarUsuario()
+    {
+        
+        try {
+            $conn = Conexao::conectar();
+           
             $sql = 'INSERT INTO usuario (nome_usuario, telefone, email, senha) VALUES (:nome_usuario, :telefone, :email, :senha)';
-
             $stmt = $conn->prepare($sql);
 
             $stmt->bindValue(':nome_usuario', $this->nome_usuario);
@@ -29,23 +31,23 @@ class Usuario{
             $stmt->bindValue(':email', $this->email);
             $stmt->bindValue(':senha', $this->senha);
 
-            $stmt->Execute();
+            $stmt->execute();
 
             return $conn->lastInsertId();
+        } catch (PDOException $erro) { 
+            // echo "<pre>";
+            // var_dump($erro);
+            // echo "</pre>";
+            // exit();
+            echo $erro->getMessage();
+        }
 
+        //public function carregarUsuario(){ --
+        //   $conn = Conexao::conectar();
+        //   $sql = "SELECT * FROM usuario WHERE id_usuario = :id";
+        //   $stmt = $conn->prepare($sql);
 
-    } catch (PDOException $erro){
-        echo $erro->getMessage();
-
+        //  $stmt = 
+        //} 
     }
-
-    //public function carregarUsuario(){ --
-     //   $conn = Conexao::conectar();
-     //   $sql = "SELECT * FROM usuario WHERE id_usuario = :id";
-     //   $stmt = $conn->prepare($sql);
-
-      //  $stmt = 
-    //} 
-}
-
 }

@@ -81,10 +81,6 @@
                         <h4>Acesse sua conta</h4>
                     </a>
                 </div>
-
-
-
-
                 <p class="h3">
                     Ao seguir com o cadastro, concordo com os <br>Termos de uso e Politicas de privacidade </p>
 
