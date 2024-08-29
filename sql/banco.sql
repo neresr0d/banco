@@ -15,7 +15,7 @@ CREATE TABLE livros (
 CREATE TABLE usuario (
     id_usuario INT PRIMARY KEY AUTO_INCREMENT,
     nome_usuario VARCHAR(100) NOT NULL,
-    telefone VARCHAR(20)
+    telefone VARCHAR()
     email VARCHAR(100) NOT NULL UNIQUE,
     senha VARCHAR(100) NOT NULL
     )
