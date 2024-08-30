@@ -478,7 +478,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translateY(-41%) translateX(-50%);
-    width: 50rem;
+    width: 60rem;
     height: 32rem;
     display: grid;
     text-align: center;
@@ -494,10 +494,10 @@ a {
     border-radius: 50px;
     position: relative;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 2px;
     justify-content: space-between;
-    width: 800x;
-    height: 50px;
+    width: 600x;
+    height: 40px;
     
 
 

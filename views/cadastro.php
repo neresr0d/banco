@@ -41,12 +41,12 @@
 
             <form action="/estante_web/banco/controllers/cadastrar_usuario_controller.php" method="POST">
 
-                <!--<div class="perfil">
+                <div class="perfil">
                     <label for="file" class="file">Foto do perfil</label>
                     <img src="/estante_web/banco/imgs/upload.png" alt="Imagem" class="img-perfil">
                     <input type="file" id="fileInput" name="file">
 
-                </div>-->
+                </div>
 
                 <div class="cad">
                     <label for="nome">Nome:</label>
@@ -54,11 +54,11 @@
 
                 </div>
                 <br>
-                <div class="cad">
+                <!--<div class="cad">
                     <label for="telefone">Telefone:</label>
                     <input type="tel" id="telefone" name="telefone" required>
 
-                </div>
+                </div>-->
                 <br>
 
                 <div class="cad">

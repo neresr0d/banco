@@ -17,7 +17,7 @@
 
             <h1>Estante Web</h1>
 
-            <form action="">
+            <form action="in" method="get">
                 <input type="search" name="busca" id="busca">
             </form>
         </div>
