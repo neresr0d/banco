@@ -69,6 +69,13 @@ alinha os itens na vertical com base no seu centro */
 
 }
 
+.logo-busca h1{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -97,6 +104,7 @@ main {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
+    
 }
 
 footer {
@@ -191,7 +199,7 @@ footer {
 .indexctt {
     background-color: #e1e6eb;
     background-repeat: no-repeat;
-    background-position: center ;
+    background-position: center;
     background-size: 100% 100%;
     
 
@@ -276,6 +284,8 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
 
 }
+
+
 
 /*.cad {
     display: flex;
@@ -581,10 +591,15 @@ a {
     
 }
 
+.cad-rodape{
+    position: relative;
+    padding: 0px;
+}
+
 @media screen and (max-width:900px) {
 
     nav {
-        background-color: var(--secuntaria);
+        
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         text-align: center;
@@ -601,14 +616,14 @@ a {
         border-radius: 2rem;
         position: relative;
         top: 17rem;
-        background-color: var(--primaria);
         border-radius: 3rem;
         width: 18rem;
         height: 30rem;
         text-align: center;
         font-size: 1rem;
-        background-color: var(--secuntaria);
+        background-color: var(--secundaria);
         font-family: Arial, Helvetica, sans-serif;
+        transform: translateY(-50%) translateX(-40%);
     }
 
     input[type="file"],
@@ -637,4 +652,54 @@ a {
 .rede_social {
     position: relative;
     left: 1rem;
+}
+
+@media screen and (max-width:3000px) {
+    .borda_login {
+        transform: translateY(-44%) translateX(-50%);
+    }
+
+    .borda_cadastro {
+        transform: translateY(-46%) translateX(-50%);
+    }
+
+    .h55 {
+        transform: translateY(-50%) translateX(-1%);
+        margin-top: 0px;
+        position: absolute;
+        padding: -7px;
+    }
+
+    .desenvolvido {
+        margin-top: -110px;
+        
+    
+    }
+
+    .quem{
+        margin-top: -20px;
+        margin-bottom: -10px;
+    }
+
+    .indexctt {
+        background-color: #e1e6eb;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        
+    
+    }
+
+    .mediactt{
+        padding: 0px;
+
+        
+    }
+
+  
+
+   
+
+    
+   
 }

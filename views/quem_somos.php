@@ -2,14 +2,14 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/views/__cabecalho.php'
 ?>
 
-    <main>
+    <main class="qqq">
         <div class="quem-somos">
             <div class="quem">
                 <h1>Quem somos</h1>
 
             </div>
             <div>
-                <h2>Olá caros amigos, é um prazer enorme ter vocês conosco. Nesse <br>
+                <h2 class="hhq">Olá caros amigos, é um prazer enorme ter vocês conosco. Nesse <br>
                     momento queremos apresentar
                     esse projeto que está sendo <br>
                     desenvolvido pelos alunos da turma 52 do Curso de Programador <br>

@@ -2,6 +2,16 @@ CREATE DATABASE estante;
 
 USE estante;
 
+CREATE TABLE usuario(
+    id_usuario INT PRIMARY KEY AUTO_INCREMENT,
+    nome_usuario VARCHAR(100) NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(100) NOT NULL,
+    foto_perfil LONGBLOB
+    );
+
+
 CREATE TABLE livros (
     id_livro INT PRIMARY KEY AUTO_INCREMENT,
     nome_livro VARCHAR(255) NOT NULL,
@@ -11,16 +21,7 @@ CREATE TABLE livros (
 
 
 );
-
-CREATE TABLE usuario(
-    id_usuario INT PRIMARY KEY AUTO_INCREMENT,
-    nome_usuario VARCHAR(100) NOT NULL,
-    telefone VARCHAR(20) NOT NULL,
-    email VARCHAR(100) NOT NULL UNIQUE,
-    senha VARCHAR(100) NOT NULL
-    );
-
-    INSERT INTO usuario (nome_usuario, telefone, email, senha) VALUES ('rodrigo', '30421881', 'rodrigommm@gmail.com', "")
+    -- INSERT INTO usuario (nome_usuario, telefone, email, senha) VALUES ('rodrigo', '30421881', 'rodrigommm@gmail.com', "")
 
     CREATE TABLE categoria (
         id_categoria INT AUTO_INCREMENT PRIMARY KEY,

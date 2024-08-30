@@ -59,7 +59,7 @@
                     <input type="tel" id="telefone" name="telefone" required>
 
                 </div>-->
-                <br>
+                
 
                 <div class="cad">
                     <label for="email">Email:</label>
@@ -73,16 +73,22 @@
                 </div>
                 <div>
                     <button type="submit" value="CADASTRAR">Criar Conta</button>
-                </div><br>
+                </div>
+                <br>
+                <br>
+                <br>
 
-                <div><br>
-                    <h4>Já é cadastrado?</h4><br>
+                <div class="cad-rodape">
+                    <h4>Já é cadastrado?</h4>
                     <a href="">
                         <h4>Acesse sua conta</h4>
                     </a>
+                   
                 </div>
-                <p class="h3">
+
+                <p class="h55">
                     Ao seguir com o cadastro, concordo com os <br>Termos de uso e Politicas de privacidade </p>
+                
 
             </form>
         </div>

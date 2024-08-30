@@ -41,7 +41,8 @@
 
     <main id="indexctt">
 
-        <div class="ICONE_insta">
+       <div class="mediactt">
+       <div class="ICONE_insta">
             <a href="https://www.instagram.com/accounts/login/" target="_blank">
                 <img src="/estante_web/banco/imgs/instagram.svg" alt="" width="70PX" height="70PX">
         </div>
@@ -87,6 +88,9 @@
             <img src="/estante_web/banco/imgs/instagram.svg" alt="" width="30px" height="30px">
         </div>
 
+
+
+       </div> 
 
     </footer>
 

@@ -58,7 +58,7 @@
 
         </div>
 
-        <div class="categoria_fav_2">
+        <!--<div class="categoria_fav_2">
         <div>
                 <img src="/imgs/" alt="">
                 <p>A cabana</p>
@@ -72,7 +72,7 @@
             <div>
                 <img src="/imgs/" alt="">
                 <p>A cabana</p>
-            </div>
+            </div>-->
 
         </div>
     </main>
