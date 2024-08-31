@@ -37,10 +37,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/views/__cabecalho.p
 
     </main>
 
-    <?php
-
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/views/__rodape.php';
-?>
 
 </body>
 

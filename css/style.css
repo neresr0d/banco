@@ -500,7 +500,7 @@ a {
 .editar1 {
 
     display: flex;
-    background-color: #915f32;
+    
     border-radius: 50px;
     position: relative;
     align-items: center;
@@ -671,13 +671,13 @@ a {
     }
 
     .desenvolvido {
-        margin-top: -110px;
+        margin-top: 60px;
         
     
     }
 
     .quem{
-        margin-top: -20px;
+        margin-top: 20px;
         margin-bottom: -10px;
     }
 
@@ -690,11 +690,7 @@ a {
     
     }
 
-    .mediactt{
-        padding: 0px;
-
-        
-    }
+    
 
   
 

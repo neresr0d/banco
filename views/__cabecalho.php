@@ -30,10 +30,10 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/auth/auth.php';
     </header>
 
     <nav>
-        <a href="">Inicio</a>
+        <a href="/estante_web/banco/index.php">Inicio</a>
         <a href="/estante_web/banco/views/quem_somos.php">Quem Somos</a>
-        <a href="/estante_web/banco/views//contatos.php">Contatos</a>
-        <a href="/estante_web/banco/views//favoritos.php" class="alinhar">
+        <a href="/estante_web/banco/views/contatos.php">Contatos</a>
+        <a href="/estante_web/banco/views/favoritos.php" class="alinhar">
             <img src="/estante_web/banco/imgs/star.png.png" alt="" width="30px" height="30px">
         Favoritos
     </a>

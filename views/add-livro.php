@@ -1,41 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/views/__cabecalho.php';
+?>
+<main>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estante Web</title>
-
-    <link rel="stylesheet" href="/estante_web/banco/css/style.css">
-
-</head>
-
-<body>
-    <header>
-        <div class="logo-busca">
-
-            <h1>Estante Web</h1>
-
-            <form action="">
-                <input type="search" name="busca" id="busca">
-            </form>
-        </div>
-
-    </header>
-
-    <nav>
-        <a href="/index.html">Inicio</a>
-        <a href="quem_somos.html">Quem Somos</a>
-        <a href="contatos.html">Contatos</a>
-        <a href="" class="alinhar">
-            <img src="../imgs/star.png.png" alt="" width="30px" height="30px">
-            Favoritos
-        </a>
-        <a href="login.html">Login</a>
-
-    </nav>
-
-    <main>
+    <form action="/estante_web/banco/controllers/cadastrar_livro_controller" method="post">
         <div class="editar">
             <div class="editar1">
                 <div>
@@ -46,45 +14,37 @@
             </div>
             <div class="editar-imgs">
                 <div class="img-livro">
-                    <p>Adicionar imagem</p><input type="file" id="fileimg" name="fileimg">
+                    <p>Adicionar imagem</p><input type="file" id="fileimg" name="foto_livro">
                 </div>
                 <div class="inputs-imgs">
-                    <input type="text" placeholder="Digite Título" class="iii">
-                    <input type="text" placeholder="Digite Autor" class="iii">
-                    <input type="text" placeholder="Digite Categoria" class="iii">
+                    <input type="text" placeholder="Digite Título" class="iii" name="nome_livro">
+                    <input type="text" placeholder="Digite Autor" class="iii" name="autor">
+                    <input type="text" placeholder="Digite Categoria" class="iii" name="id_categorias">
                 </div>
             </div>
 
             <div>
-                <input type="text" placeholder="Digite Sinopse">
+                <input type="text" placeholder="Digite Sinopse" name="sinopse">
             </div>
             <div>
-                <button>Salvar</button>
+                <button type="submit">Salvar</button>
             </div>
             <div>
-                <button>Apagar</button>
+                <button type="delete">Apagar</button>
             </div>
             <div>
-                <button>Editar</button>
+                <button type="edit">Editar</button>
             </div>
         </div>
-    </main>
 
-    <footer>
-        <div id="copy">
-            &copy; Estante Web
-        </div>
 
-        <div>
-            Todos os direitos reservados
-        </div>
+    </form>
 
-        <div class="img-fim">
-            <img src="../imgs/facebook.svg" alt="" width="30px" height="30px">
-            <img src="..//imgs/instagram.svg" alt="" width="30px" height="30px">
-        </div>
+</main>
 
-    </footer>
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/views/__rodape.php';
+?>
 
 </body>
 

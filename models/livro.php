@@ -5,24 +5,24 @@ class Livro {
     public $id_livro;
     public $nome_livro;
     public $autor; 
-    public $descricao_livro;
-    public $ano_lancamento;
+    public $sinopse;
     public $foto_livro;
+    public $id_categoria;
 
     public function cadastrarLivro()
     {
         try{
           $conn = Conexao::conectar(); 
 
-          $sql = 'INSERT INTO livros (nome_livro, autor, descricao_livro, ano_lancamento, foto_livro) VALUES (:nome_livro, :autor, :descricao_livro, :ano_lancamento, :foto_livro)';
+          $sql = 'INSERT INTO livro (nome_livro, autor, sinopse, foto_livro, id_categoria) VALUES (:nome_livro, :autor, :sinopse, :foto_livro, :id_categoria)';
 
           $stmt = $conn->prepare($sql);
 
             $stmt->bindValue(':nome_livro', $this->nome_livro);
             $stmt->bindValue(':autor', $this->autor);
-            $stmt->bindValue(':descricao_livro', $this->descricao_livro);
-            $stmt->bindValue(':ano_lancamento', $this->ano_lancamento);
+            $stmt->bindValue(':sinopse', $this->sinopse);
             $stmt->bindValue(':foto_livro', $this->foto_livro);
+            $stmt->bindValue(':id_categoria', $this->id_categoria);
 
             $stmt->execute();
         } catch(PDOException $erro) {

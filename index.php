@@ -8,7 +8,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/views/__cabecalho.p
 <?php if(isset($_COOKIE['aviso'])):?>
         <h1><?= $_COOKIE['aviso']?></h1>
         <?php
-            setcookie('aviso', '', time() - 3600, '/estante_web/');
+            setcookie('aviso', '', time() - 3600, '//');
         ?>
     <?php endif;?>
     
