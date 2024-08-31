@@ -1,5 +1,6 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/configs/conexao.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/models/categoria.php';
 
 class Livro {
     public $id_livro;
