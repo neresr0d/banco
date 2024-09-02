@@ -25,7 +25,7 @@ $id_livro = $livro->cadastrarLivro();
 $nome = $_POST['id_categoria'];
 
 $categoria = new Categoria();
-$categoria->nome = $nome;
+$categoria->nome_categoria = $nome;
 
 
 $id_categoria = $categoria->cadastrarCategoria();

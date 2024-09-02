@@ -14,7 +14,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/views/__cabecalho.p
                 <div class="perfil">
                     <label for="file" class="file">Foto do perfil</label>
                     <img src="/estante_web/banco/imgs/upload.png" alt="Imagem" class="img-perfil">
-                    <input type="file" id="fileInput" name="file">
+                    <input type="file" id="fileInput" name="foto_perfil">
 
                 </div>
 
