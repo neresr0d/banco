@@ -1,7 +1,5 @@
 
-<?php
- require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/auth/auth.php'
-?> 
+ 
 
 
 <!DOCTYPE html>
@@ -38,7 +36,7 @@
             <img src="/estante_web/banco/imgs/star.png.png" alt="" width="30px" height="30px">
         Favoritos
     </a>
-        <a href="/estante_web/banco/views/login.php" class="alinhar"><img src="/estante_web/banco/imgs/user-solid.svg" alt="" height="30px" width="30px">Olá, <span><?=$_SESSION['nome_usuario']?></span></a>
+        <a href="/estante_web/banco/views/login.php" class="alinhar"><img src="/estante_web/banco/imgs/user-solid.svg" alt="" height="30px" width="30px">Olá, <!--<span>?=$_SESSION['nome_usuario']?--></span></a>
         <!--?php else : ?>-->
         <a href="/estante_web/banco/views/login.php">Login</a>
       <!--?php endif; ?>-->
