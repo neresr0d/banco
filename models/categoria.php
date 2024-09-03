@@ -22,11 +22,11 @@ class Categoria
     {
         try {
             $conn = Conexao::conectar();
-            $sql = 'INSERT INTO categoria (nome_categoria) VALUES (:nome_categoria)';
+            $sql = 'INSERT INTO categoria (nome) VALUES (:nome)';
 
             $stmt = $conn->prepare($sql);
 
-            $stmt->bindValue(':nome_categoria', $this->nome_categoria);
+            $stmt->bindValue(':nome', $this->nome_categoria);
 
 
             $stmt->execute();
@@ -38,7 +38,7 @@ class Categoria
     public function carregarCategoria()
     {
         $conn = Conexao::conectar();
-        $sql = "SELECT * FROM categorias WHERE id_categoria = :id";
+        $sql = "SELECT * FROM categoria WHERE id_categoria = :id";
         $stmt = $conn->prepare($sql);
 
         $stmt->bindValue(':id_categoria', $this->id_categoria);
@@ -53,11 +53,11 @@ class Categoria
     
     
     
-    public static function atualizarCategoria()
+    public function atualizarCategoria()
     {
         try {
             $conn = Conexao::conectar();
-            $sql = "UPDATE categorias SET nome_categoria = :nome_categoria WHERE id_categoria = :id_categoria";
+            $sql = "UPDATE categoria SET nome_categoria = :nome_categoria WHERE id_categoria = :id_categoria";
             $stmt = $conn->prepare($sql);
 
             $stmt->bindValue(':nome_categoria', $this->nome_categoria);
@@ -76,7 +76,7 @@ class Categoria
     {
         try {
             $conn = Conexao::conectar();
-            $sql = "SELECT * FROM categorias";
+            $sql = "SELECT * FROM categoria";
             $stmt = $conn->prepare($sql);
             $stmt->execute();
 
@@ -89,11 +89,11 @@ class Categoria
 
     
 
-    public static function deletarCategoria()
+    public function deletarCategoria()
     {
         try {
             $conn = Conexao::conectar();
-            $sql = "DELETE FROM categorias WHERE id_categoria = :id_categoria";
+            $sql = "DELETE FROM categoria WHERE id_categoria = :id_categoria";
             $stmt = $conn->prepare($sql);
             $stmt->bindValue(':id_categoria', $this->id_categoria);
             $stmt->execute();

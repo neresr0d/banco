@@ -11,5 +11,5 @@ $categoria->nome_categoria = $nome_categoria;
 
 $id_categoria = $categoria->cadastrarCategoria();
 
-header('Location: /estante_web/banco/views/login.php');
+header('Location: /estante_web/banco/views/adicionar_categoria.php');
 exit();

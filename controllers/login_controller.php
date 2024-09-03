@@ -13,11 +13,10 @@ Auth::login($email_login, $senha_login);
 header('Location: /estante_web/banco/index.php');
 exit();?>
 
-<?php 
-if(isset($_COOKIE['aviso'])):?>
+ <?php 
+ if(isset($_COOKIE['aviso'])):?>
     <h1><?= $_COOKIE['aviso']?></h1>
     <?php
         setcookie('aviso', '', time() + 3600, '/estante_web/');
     ?>
-<?php endif;?>
-?>
+<?php endif; ?>

@@ -5,7 +5,7 @@ class Usuario
 {
     public $id_usuario;
     public $nome_usuario;
-    //public $telefone;
+    public $telefone;
     public $email;
     public $senha;
     public $foto_perfil;
@@ -46,11 +46,11 @@ class Usuario
         try {
             $conn = Conexao::conectar();
            
-            $sql = 'INSERT INTO usuarios (nome_usuario, telefone, email, senha, foto_perfil) VALUES (:nome_usuario, :telefone, :email, :senha, :foto_perfil)';
+            $sql = 'INSERT INTO usuario (nome_usuario, telefone, email, senha, foto_perfil) VALUES (:nome_usuario, :telefone, :email, :senha, :foto_perfil )';
             $stmt = $conn->prepare($sql);
 
             $stmt->bindValue(':nome_usuario', $this->nome_usuario);
-            //$stmt->bindValue(':telefone', $this->telefone);
+            $stmt->bindValue(':telefone', $this->telefone);
             $stmt->bindValue(':email', $this->email);
             $stmt->bindValue(':senha', $this->senha);
             $stmt->bindValue(':foto_perfil', $this->foto_perfil);
