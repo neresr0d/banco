@@ -22,11 +22,11 @@ class Categoria
     {
         try {
             $conn = Conexao::conectar();
-            $sql = 'INSERT INTO categoria (nome) VALUES (:nome)';
+            $sql = 'INSERT INTO categoria (nome_categoria) VALUES (:nome_categoria)';
 
             $stmt = $conn->prepare($sql);
 
-            $stmt->bindValue(':nome', $this->nome_categoria);
+            $stmt->bindValue(':nome_categoria', $this->nome_categoria);
 
 
             $stmt->execute();
@@ -38,7 +38,7 @@ class Categoria
     public function carregarCategoria()
     {
         $conn = Conexao::conectar();
-        $sql = "SELECT * FROM categoria WHERE id_categoria = :id";
+        $sql = "SELECT * FROM categoria WHERE id_categoria = :id_categoria";
         $stmt = $conn->prepare($sql);
 
         $stmt->bindValue(':id_categoria', $this->id_categoria);

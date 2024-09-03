@@ -9,7 +9,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/views/__cabecalho.p
             <h1>Crie sua conta</h1>
 
 
-            <form action="/estante_web/banco/controllers/cadastrar_usuario_controller.php" method="POST">
+            <form action="/estante_web/banco/controllers/cadastrar_usuario_controller.php" method="POST" enctype="multipart/form-data">
 
                 <div class="perfil">
                     <label for="file" class="file">Foto do perfil</label>

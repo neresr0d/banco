@@ -1,22 +1,36 @@
 <?php
-
 require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/auth/auth.php';
 
-$email_login = $_POST['email_login'];
-$senha_login = $_POST['senha_login'];
+if(filter_var($_POST['email_login'], FILTER_VALIDATE_EMAIL)){
+    $email = filter_var($_POST['email_login'], FILTER_SANITIZE_EMAIL);
 
-Auth::login($email_login, $senha_login);
+}
+
+$senha = $_POST['senha_login'];
 
 
 
 
-header('Location: /estante_web/banco/index.php');
-exit();?>
+Auth::login($email, $senha);
 
- <?php 
- if(isset($_COOKIE['aviso'])):?>
-    <h1><?= $_COOKIE['aviso']?></h1>
-    <?php
-        setcookie('aviso', '', time() + 3600, '/estante_web/');
-    ?>
-<?php endif; ?>
+
+header('Location: /estante_web/banco/views/login.php');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

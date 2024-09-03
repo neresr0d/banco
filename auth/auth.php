@@ -1,11 +1,14 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/configs/conexao.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/models/usuario.php';
 
 session_start();
+
+
 class Auth {
 
-    static function login($email, $senha) {
-        try {
+    public static function login($email, $senha) {
+        
             $conn = Conexao::conectar();
             $sql = 'SELECT * FROM usuario WHERE email = :email';
     
@@ -13,36 +16,39 @@ class Auth {
             $stmt->bindValue(':email', $email);
     
             $stmt->execute();
-    
-            $resultado = $stmt->fetch();
 
-            if(!empty($resultado) && password_verify($senha, $resultado['senha'])) {
-                $_SESSION['id_usuario'] = $resultado['id_usuario'];
-                $_SESSION['nome_usuario'] = $resultado['nome_usuario'];
+    
+            $usuario = $stmt->fetch();
+
+
+            if($usuario && password_verify($senha, $usuario['senha_login'])) {
+                $_SESSION['id_usuario'] = $usuario['id_usuario'];
+                $_SESSION['nome_usuario'] = $usuario['nome_usuario'];
+                $_SESSION['email_usuario'] = $usuario['email_usuario'];
+
 
                 header('Location: /estante_web/banco/index.php');
                 exit();
+            } else{
+                header('Location: /estante_web/banco/login.php');
+                exit();
             }
             
-        } catch (PDOException $erro) {
-            echo $erro->getMessage();
-        }
+        } 
+        
+    
+    public static function estarLogado() {
+        return isset ($_SESSION['id_usuario']);
     }
 
-    static function logout() {
+    public static function logout() {
         session_unset();
         session_destroy();
         header('Location: /estante_web/banco/views/login.php');
         exit();
     }
 
-    static function estarLogado() {
-        if(isset($_SESSION['nome_usuario'])) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    
 }
 
 ?>

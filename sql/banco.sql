@@ -2,7 +2,7 @@ CREATE DATABASE banco_pi;
 
 USE banco_pi;
 
-CREATE TABLE usuarios(
+CREATE TABLE usuario(
     id_usuario INT PRIMARY KEY AUTO_INCREMENT,
     nome_usuario VARCHAR(100) NOT NULL,
     --telefone VARCHAR(20) NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE categoria (
 
 --seeds categoria 
 
- USE testando;
+ USE banco_pi;
 
 INSERT INTO categoria (nome_categoria) VALUES ('Mistério'), ('Horror'), ('Fantasia'), ('Romance'), ('Auto Ajuda'), ('Saúde e Bem-Estar');
 

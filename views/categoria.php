@@ -16,7 +16,7 @@ $listagem_categoria = Categoria::listar();
         <div id="tabela-categorias">
         <?php foreach ($listagem_categoria as $categoria): ?>  
                 <div class="linhas-categoria">
-                    <p><?= $categoria['nome'] ?></p>
+                    <p><?= $categoria['nome_categoria'] ?></p>
                     <div class="acoes-categoria">
                         <a href="/estante_web/views/edit-categorias.php?id_categoria=<?= $categoria['id_categoria'] ?>" class="btn-edit">
                             <img src="/estante_web/imgs/edit-icon.svg" alt=""></img>

@@ -5,52 +5,30 @@ class Usuario
 {
     public $id_usuario;
     public $nome_usuario;
-    public $telefone;
     public $email;
     public $senha;
     public $foto_perfil;
 
 
-    /* public function __construction($id = false){
-        if($id);{
-           $this->id_usuario = $id;
-          $this->carregarUsuario();
+    public function __construction($id = false)
+    {
+        if ($id); {
+            $this->id_usuario = $id;
+            $this->carregarUsuario();
         }
     }
 
-    public function getEmail(){
-        return $this->email;
-    }
-
-    public function setEmail($email){
-        $this->email = $email;
-
-    }
-
-    public function getSenha(){
-        return $this->senha;
-    }
-
-    public function setSenha($senha){
-        $this->email = $senha;
-
-    }
-
-    public function getId(){
-        return $this->id_usuario;
-    } */
 
     public function cadastrarUsuario()
     {
-        
+
         try {
             $conn = Conexao::conectar();
-           
-            $sql = 'INSERT INTO usuario (nome_usuario, telefone, email, senha, foto_perfil) VALUES (:nome_usuario, :telefone, :email, :senha, :foto_perfil )';
+
+            $sql = "INSERT INTO usuario (nome_usuario, email, senha, foto_perfil) VALUES (:nome_usuario, :email, :senha, :foto_perfil)";
             $stmt = $conn->prepare($sql);
 
             $stmt->bindValue(':nome_usuario', $this->nome_usuario);
-            $stmt->bindValue(':telefone', $this->telefone);
             $stmt->bindValue(':email', $this->email);
             $stmt->bindValue(':senha', $this->senha);
             $stmt->bindValue(':foto_perfil', $this->foto_perfil);
@@ -58,30 +36,81 @@ class Usuario
             $stmt->execute();
 
             return $conn->lastInsertId();
-        } catch (PDOException $erro) { 
-            // echo "<pre>";
-            // var_dump($erro);
-            // echo "</pre>";
-            // exit();
+        } catch (PDOException $erro) {
+             /* echo "<pre>";
+             var_dump($erro);
+             echo "</pre>";
+             exit(); */
             echo $erro->getMessage();
         }
     }
 
-        /* public function carregarUsuario(){ 
-           $conn = Conexao::conectar();
-           $sql = "SELECT * FROM usuarioS WHERE id_usuario = :id";
-           $stmt = $conn->prepare($sql);
+    public function carregarUsuario()
+    {
+        try {
 
-           $stmt->bindValue(':id', $this->id_usuario);
+            $conn = Conexao::conectar();
+            $sql = "SELECT * FROM usuario WHERE id_usuario = :id_usuario";
+            $stmt = $conn->prepare($sql);
 
-           $stmt->execute();
-           $resultado = $stmt->fetch();
+            $stmt->bindValue(':id', $this->id_usuario);
+
+            $stmt->execute();
+            $resultado = $stmt->fetch();
+
+
+            $this->nome_usuario = $resultado['nome'];
+            $this->email = $resultado['email'];
+            $this->senha = $resultado['senha'];
+            $this->foto_perfil = $resultado['foto_perfil'];
+        } catch (PDOException $erro) {
+            echo $erro->getMessage();
+        }
+    }
+
+    public function atualizarUsuario(){
+        try{
+            $conn = Conexao::conectar();
+            $sql = "UPDATE usuario SET email = :email, senha = :senha, foto_perfil = :foto_perfil WHERE id_usuario = :id_usuario";
+            $stmt = $conn->prepare($sql);
+
            
+            $stmt->bindValue(':email', $this->email);
+            $stmt->bindValue(':senha', $this->senha);
+            $stmt->bindValue(':foto_perfil', $this->foto_perfil);
+            $stmt->bindValue(':id_usuario', $this->id_usuario);
+            $stmt->execute();
 
-          $this->setEmail($resultado['email']);
-          $this->setSenha($resultado['senha']);
-        }  */
 
+        }catch(PDOException $erro){
+            echo $erro->getMessage();
+        }
+}
+}
+
+
+
+/*public function getEmail(){
+    return $this->email;
+}
+
+public function setEmail($email){
+    $this->email = $email;
+
+}
+
+public function getSenha(){
+    return $this->senha;
+}
+
+public function setSenha($senha){
+    $this->email = $senha;
+
+}
+
+public function getId(){
+    return $this->id_usuario;
+} */
          /* public static function listar(){
             try{
                 $conn = Conexao::conectar();
@@ -99,21 +128,8 @@ class Usuario
 
             } 
  */
-    //public static function atualizar(){
-        //try{
-            //$conn = Conexao::conectar();
-            //$sql = "UPDATE usuarios SET email = :email, senha = :senha WHERE id_usuario = :id";
-            //$stmt = $conn->prepare($sql);
-            //$stmt->bindValue(':email', $this->getEmail());
-            //$stmt->bindValue(':senha', $this->getSenha());
-            //$stmt->bindValue(':id', $this->getId());
-            //$stmt->execute();
-
-
-        //}catch(PDOException $erro){
-            //echo $erro->getMessage();
-        //}
-    }
+    
+    //}
 
     //public static function deletar(){
         //try{
@@ -129,4 +145,4 @@ class Usuario
     //}
         
     
-//}
+//
