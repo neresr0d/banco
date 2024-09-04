@@ -504,7 +504,7 @@ a {
     border-radius: 50px;
     position: relative;
     align-items: center;
-    margin-top: 2px;
+    margin-top: 20px;
     justify-content: space-between;
     width: 600x;
     height: 40px;
@@ -683,6 +683,18 @@ a {
   #categoria-livro {
     justify-content: center;
     align-items: center;
+  }
+
+  .bot-sair{
+    font-size: 0.9rem;
+    position: relative;
+    align-content: center;
+    top: -1.8rem;
+    width: 4rem;
+    left: 90rem;
+    color: white;
+
+    background-color:black;
   }
 
 @media screen and (max-width:900px) {

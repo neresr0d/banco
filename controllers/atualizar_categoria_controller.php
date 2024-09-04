@@ -5,6 +5,7 @@
  $nome_categoria = $_POST['input-categorias'];
 
  $categoria = new Categoria($id_categoria);
+ $categoria->id_categoria = $id_categoria;
  $categoria->nome_categoria = $nome_categoria;
  
  $categoria->atualizarCategoria();

@@ -21,7 +21,8 @@ class Auth {
             $usuario = $stmt->fetch();
 
 
-            if($usuario && password_verify($senha, $usuario['senha_login'])) {
+            if($usuario && password_verify($senha, $usuario['senha'])) {
+                
                 $_SESSION['id_usuario'] = $usuario['id_usuario'];
                 $_SESSION['nome_usuario'] = $usuario['nome_usuario'];
                 $_SESSION['email_usuario'] = $usuario['email_usuario'];
@@ -30,7 +31,7 @@ class Auth {
                 header('Location: /estante_web/banco/index.php');
                 exit();
             } else{
-                header('Location: /estante_web/banco/login.php');
+                header('Location: /estante_web/banco/views/login.php');
                 exit();
             }
             

@@ -9,12 +9,8 @@ if(filter_var($_POST['email_login'], FILTER_VALIDATE_EMAIL)){
 $senha = $_POST['senha_login'];
 
 
-
-
 Auth::login($email, $senha);
 
-
-header('Location: /estante_web/banco/views/login.php');
 
 
 

@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/models/categoria.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/estante_web/banco/models/categoria.php';
 
 $id_categoria = $_POST['id_categoria'];
 $nome_categoria = $_POST['input-edit-categorias'];
